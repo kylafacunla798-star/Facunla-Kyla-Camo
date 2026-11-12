@@ -1,0 +1,630 @@
+
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #edf5f9;
+    color: #142d4e;
+    line-height: 1.6;
+}
+
+section {
+    padding: 85px 8%;
+}
+
+/* NAVIGATION */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #ffffff;
+    box-shadow: 0 2px 12px rgba(20, 45, 78, 0.10);
+}
+
+.navbar {
+    min-height: 75px;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: #142d4e;
+    letter-spacing: 2px;
+}
+
+.logo span,
+footer h2 span {
+    color: #8bbbd3;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.navbar ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #142d4e;
+    background: #dceef7;
+    padding: 10px 15px;
+    border: 1px solid #8bbbd3;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    background: #142d4e;
+    color: #ffffff;
+}
+
+/* PERSONAL INFORMATION */
+.personal-section {
+    background: #edf5f9;
+}
+
+.personal-label h1 {
+    font-size: 34px;
+    margin-bottom: 45px;
+    color: #142d4e;
+}
+
+.profile-layout {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.profile-photo {
+    background: #dceef7;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 380px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(20, 45, 78, 0.10);
+}
+
+.profile-photo img {
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.photo-caption {
+    padding: 20px;
+    text-align: center;
+}
+
+.photo-caption h2 {
+    font-size: 23px;
+    margin-bottom: 5px;
+    color: #142d4e;
+}
+
+.photo-caption p {
+    color: #526b7a;
+    font-size: 14px;
+}
+
+.small-title,
+.section-heading span,
+.project-information > span,
+.game-heading span {
+    color: #477d9b;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.profile-info h2 {
+    font-size: 38px;
+    line-height: 1.25;
+    margin: 15px 0 20px;
+    color: #142d4e;
+}
+
+.profile-info h2 span {
+    color: #477d9b;
+}
+
+.introduction {
+    color: #526b7a;
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.personal-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.personal-details div {
+    border-bottom: 1px solid #b9d5e4;
+    padding-bottom: 12px;
+}
+
+.personal-details span {
+    color: #477d9b;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.personal-details p {
+    font-size: 14px;
+    margin-top: 5px;
+    overflow-wrap: anywhere;
+    color: #142d4e;
+}
+
+/* SECTION HEADINGS */
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading h1 {
+    font-size: 34px;
+    margin: 10px 0;
+    color: #142d4e;
+}
+
+.section-heading p {
+    color: #526b7a;
+    font-size: 15px;
+}
+
+/* EDUCATIONAL BACKGROUND */
+.education-section {
+    background: #ffffff;
+}
+
+.education-timeline {
+    max-width: 850px;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+}
+
+.education-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 25px;
+    background: #edf5f9;
+    border-left: 5px solid #8bbbd3;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.education-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(20, 45, 78, 0.08);
+}
+
+.education-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #477d9b;
+}
+
+.education-content span {
+    color: #477d9b;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.education-content h2 {
+    margin: 5px 0 10px;
+    font-size: 21px;
+    color: #142d4e;
+}
+
+.education-content p {
+    color: #526b7a;
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+/* SKILLS */
+.skills-section {
+    background: #edf5f9;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.skill-card {
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    border-bottom: 4px solid #8bbbd3;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(20, 45, 78, 0.09);
+}
+
+.skill-icon {
+    width: 48px;
+    height: 48px;
+    background: #dceef7;
+    color: #142d4e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.skill-card h2 {
+    font-size: 19px;
+    margin-bottom: 15px;
+    color: #142d4e;
+}
+
+.skill-card ul {
+    padding-left: 20px;
+    color: #526b7a;
+    font-size: 14px;
+}
+
+.skill-card li {
+    margin-bottom: 10px;
+}
+
+.skills-note {
+    margin: 40px auto 0;
+    max-width: 700px;
+    padding: 25px;
+    text-align: center;
+    background: #dceef7;
+    border-radius: 10px;
+}
+
+.skills-note h3 {
+    color: #142d4e;
+    margin-bottom: 8px;
+}
+
+.skills-note p {
+    color: #526b7a;
+    font-size: 14px;
+}
+
+/* JAVA SECTION */
+.java-section {
+    background: #ffffff;
+}
+
+.java-project {
+    max-width: 850px;
+    margin: auto;
+}
+
+.project-information {
+    background: #edf5f9;
+    border-radius: 12px;
+    padding: 30px;
+    border-left: 5px solid #8bbbd3;
+}
+
+.project-information h2 {
+    font-size: 26px;
+    margin: 10px 0;
+    color: #142d4e;
+}
+
+.project-information > p {
+    color: #526b7a;
+    margin-bottom: 20px;
+}
+
+.project-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    font-size: 14px;
+    color: #142d4e;
+}
+
+/* PLAYABLE GAME */
+.game-box {
+    max-width: 650px;
+    margin: 35px auto;
+    padding: 35px 25px;
+    background: #edf5f9;
+    border: 1px solid #8bbbd3;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(20, 45, 78, 0.07);
+}
+
+.game-box h2 {
+    font-size: 25px;
+    color: #142d4e;
+    margin: 8px 0;
+}
+
+.game-box > p {
+    color: #526b7a;
+    font-size: 14px;
+}
+
+.game-information {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 25px 0;
+    padding: 15px;
+    background: #dceef7;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #142d4e;
+}
+
+.game-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #142d4e;
+}
+
+#feedback {
+    color: #526b7a;
+    min-height: 25px;
+    font-size: 14px;
+}
+
+.game-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.game-buttons button {
+    padding: 13px 20px;
+    background: #142d4e;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.game-buttons button:hover {
+    background: #477d9b;
+    transform: translateY(-2px);
+}
+
+.game-buttons button:disabled {
+    background: #a9c4d3;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#gameResult {
+    margin-top: 25px;
+    padding: 15px;
+    background: #dceef7;
+    border-radius: 8px;
+    color: #142d4e;
+    line-height: 2;
+}
+
+#gameResult:empty {
+    display: none;
+}
+
+#gameResult h3 {
+    margin-bottom: 10px;
+}
+
+/* JAVA SOURCE CODE */
+.java-source {
+    max-width: 850px;
+    margin: 35px auto;
+}
+
+.java-source h2 {
+    color: #142d4e;
+    margin-bottom: 8px;
+}
+
+.java-source > p {
+    color: #526b7a;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.java-source details {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.java-source summary {
+    background: #142d4e;
+    color: #ffffff;
+    padding: 16px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.java-source summary:hover {
+    background: #477d9b;
+}
+
+.java-source pre {
+    padding: 25px;
+    background: #142d4e;
+    color: #dceef7;
+    overflow-x: auto;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.java-source code {
+    font-family: Consolas, monospace;
+}
+
+/* FOOTER */
+footer {
+    padding: 40px 20px;
+    text-align: center;
+    background: #142d4e;
+    color: #ffffff;
+}
+
+footer h2 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #dceef7;
+    font-size: 12px;
+    margin: 5px 0;
+    letter-spacing: 1px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+
+    section {
+        padding: 65px 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .profile-layout {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .profile-photo {
+        margin: auto;
+        max-width: 350px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    section {
+        padding: 50px 6%;
+    }
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .navbar ul {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .navbar ul li a {
+        font-size: 11px;
+        padding: 8px 10px;
+    }
+
+    .personal-label h1,
+    .section-heading h1 {
+        font-size: 27px;
+    }
+
+    .profile-info h2 {
+        font-size: 30px;
+    }
+
+    .profile-photo img {
+        height: 350px;
+    }
+
+    .personal-details {
+        grid-template-columns: 1fr;
+    }
+
+    .education-card {
+        gap: 15px;
+        padding: 20px 15px;
+    }
+
+    .education-number {
+        font-size: 22px;
+    }
+
+    .education-content h2 {
+        font-size: 18px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-details {
+        grid-template-columns: 1fr;
+    }
+
+    .game-box {
+        padding: 25px 15px;
+    }
+
+    .game-information {
+        font-size: 13px;
+    }
+
+    .game-buttons {
+        flex-direction: column;
+    }
+
+    .game-buttons button {
+        width: 100%;
+    }
+
+    .java-source pre {
+        font-size: 11px;
+    }
+}
